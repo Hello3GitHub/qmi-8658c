@@ -1,0 +1,7 @@
+config IIO_QMI8658
+    tristate "QST QMI8658 IMU driver"
+    depends on I2C
+	select IIO_BUFFER
+	select IIO_KFIFO_BUF
+    help
+      Say yes here to build support for QST QMI8658 IMU.
